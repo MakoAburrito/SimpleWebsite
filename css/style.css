@@ -1,0 +1,844 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+iframe{
+    border:none;
+}
+.ExtraBold{
+    font-weight: bold;
+    font-weight: 900;
+    color:aliceblue;
+    text-shadow: 1px 2px 3px black;
+    text-decoration: none;
+}
+/*This is the nav bar*/
+.NavContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #62F28A;
+    padding: 1rem;
+}
+
+.MenuContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.MenuItem{
+    padding: 1rem;
+}
+
+.Logo{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.LogoContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+/*Hamburger Menu*/
+.togglebtn{
+    position: absolute;
+    top: 3rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.togglebtn .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 2px 3px black;
+}
+/*This is temporary to the website this is for the wireframe.html*/
+.imgWireframes{
+ object-fit: contain;
+}
+.Wireframes{
+    width:  100%;
+    height: 100%;
+}
+/*These are styles sspecific to the contactme.html*/
+.Spacer{
+    height: 100vh;
+    width: 100%;
+    left:0;
+    top: 0;
+    position: relative;
+    background-size: cover;
+    background: url('Images/assets_07d6447e.mp4') center center;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.modal-content{ 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(245, 245, 245, 0.432);
+    border: 3px solid black;
+    border-radius: 30px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.TextContent{
+    background-color: rgb(234, 243, 239);
+    Border-bottom: 2px solid rgb(132, 148, 148);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    border-radius: 30px 30px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+.TextContent li{
+    list-style: none;
+    padding: 0px 20px;
+}
+.TextContent li h4 span a{
+    color: rgb(102, 240, 102);
+    font-weight: bold;
+    text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);;
+}
+.ColumnContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 70px 30px 30px 30px;
+    gap: 0;
+    justify-content: center;
+    align-content: center;
+}
+.Column1{
+    border-radius: 20px;
+    padding-right: 30px;
+    
+}
+form input, textarea{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+#input-field
+{
+    padding: 5px;
+}
+/*Singing Shark on Scroll also part of Contact.me*/
+.moving-button{
+    z-index: 3;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    margin: auto;
+    display: block;
+    animation: moveUpDown 1s ease-in-out infinite alternate;
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+.moving-button img{
+    height: 150px;
+    width: 150px;
+}
+
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+
+/*This is the Animated Wave SVG Section*/
+/*The About Content on top of the Animated Wave*/
+.AboutContainer{
+    position: relative;
+}
+.AboutContent{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+    padding: 50px 50px;
+    gap: 60px;
+    z-index: 2;
+    position: relative;
+    background-size: cover; background: url('Images/assets_07d6447e.mp4') center center;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Wrapper{
+    width: 50%;
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 50px;
+    box-shadow: 0 4px 2px -2px gray;
+}
+.AboutText{
+    color:#d1ffea;
+    margin: 20px 0px;
+}
+.ImgType{
+    height: 562px;
+    width: 558px;
+    border-radius: 50%;
+    box-shadow:
+    0 0 60px 30px rgb(255, 255, 255), 
+    0 0 100px 60px rgb(166, 255, 166);
+    transition: box-shadow 4s ease-in-out;
+    animation: blink 4s linear infinite;
+    padding: 10px;
+}
+.SpecialColor{
+    color: #ffda76;
+    font-family: Impact, sans-serif;
+    font-weight: 100;
+}
+
+.ImgType:hover{
+    position: relative;
+    top: -10px;
+}
+@keyframes blink {
+    0% {box-shadow: 0px 0px 20px 20px rgb(255, 255, 255);}
+    50% {box-shadow: 0px 0px 20px 40px  rgb(166, 255, 166);}
+    100% {box-shadow: 0px 0px 20px 20px rgb(255, 255, 255);}
+}
+.CVbtns{
+    width: 100%;
+    position: relative;
+}
+.CVbtns button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 400;
+    color: aliceblue;
+    background-color:#62F28A;
+    padding: 8px 4px;
+    margin: 10px 5px;
+    letter-spacing: 2px;
+    text-shadow: 1px 2px 3px black;
+    box-shadow: 1px 2px 3px black;
+}
+.CVbtns button:hover{
+    background-color:blueviolet;
+}
+/*Section for the animated wave*/
+.loop{
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    z-index: -1;
+    border: none;
+    clip-path: inset(0.01px 0.01px);
+}
+#Visual{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.parrallax > path {
+    animation: Wave 5s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+}
+
+.parrallax > path:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+.parrallax > path:nth-child(2) {
+    animation-delay: -4s;
+    animation-duration: 10s;
+}
+.parrallax > path:nth-child(3) {
+    animation-delay: -6s;
+    animation-duration: 14s;
+}
+.parrallax > path:nth-child(4) {
+    animation-delay: -8s;
+    animation-duration: 18s;
+
+}
+.parrallax > path:nth-child(5) {
+    animation-delay: -10s;
+    animation-duration: 20s;
+}
+
+@keyframes Wave {
+    0%, 100%{
+        transform: translate3d(0, 0px, 0);
+    }
+    50%{
+        transform: translate3d(0, 15px, 0px);
+    }
+}
+/*Grid Container for SKills Section of Website*/
+.SkillContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    position: relative;
+}
+.GridContainer {
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    align-items: center;
+    justify-content: center;
+}
+.GridItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    /*A really good guide on background image properties
+        https://www.svgbackgrounds.com/how-to-add-svgs-with-css-background-image/
+    */
+    background-image: url('Images/blob2.svg'), url('Images/blob.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    Background-blend-mode: color-dodge;
+
+    
+}
+.GridItem:hover{
+    position: relative;
+    top: -10px;
+}
+
+.GridItem svg:hover{
+    position: relative;
+    top: -10px;
+    box-shadow: 0 17px 9px -19px rgba(0, 0, 0, 0.116);
+    
+}
+/* Work Experience Timeline */
+.timelineContainer{
+    position: relative;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+.timeline{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+}
+@keyframes movedown {
+    0%{
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.timeline:nth-child(0){
+    animation-delay: 1s;
+}
+.timeline:nth-child(2){
+    animation-delay: 2s;
+}
+.timeline:nth-child(3){
+    animation-delay: 3s;
+}
+.timeline:nth-child(4){
+    animation-delay: 4s;
+}
+
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #FFF;
+    box-shadow: 0 3px 6px black;
+    top: 0;
+    left: 100%;
+    margin-left: -3px;
+    z-index: -1;
+    animation: moveline 6s linear forwards;
+}
+@keyframes moveline {
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 100%;
+    }
+}
+.timeline img {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    right: -30px;
+    top: 32px;
+    z-index: 10;
+    background-color: #fff;
+    box-shadow: 0 3px 6px black;
+}
+.timelineContent{
+    padding: 20px 30px;
+    background: #fff;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+    box-shadow: 0 3px 6px black;
+}
+.timelineContent
+.Left-Container{
+    left: 0;
+}
+.Right-Container{
+    left: 120%;
+}
+.left-container-arrow{
+ height: 0;
+ width: 0;
+ position: absolute;
+ top: 28px;
+ z-index: 1;
+ border-top: 15px solid transparent;
+ border-bottom: 15px solid transparent;
+ border-left: 15px solid rgb(233, 247, 230);
+ right: -15px;
+}
+.right-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid rgb(233, 247, 230);
+    left: -15px;
+   }
+
+@media screen and (max-width: 1100px) {
+    .timeline{
+        width: 100%;
+        margin: 0px;
+    }
+    .timeline img{
+        right: 16px;
+    }
+    .timeline::after{
+        left: 18px;
+        margin-left: 0px;
+    } 
+    .timelineContainter{
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+    .timelineContent{
+        font-size: 13px;
+    }
+    .timelineContent small{
+        margin-bottom: 10px;
+    }
+    .Right-Container{
+        left: 0;
+    }
+    .Left-Container img, .Right-Container img{
+        left: 0px;
+        right: 0px;
+    }
+    
+}
+/*Carosel Cards*/
+.OuterSectionText{
+    padding: 30px;
+    text-align: center;
+    margin: 100px auto;
+}
+.OuterSectionText h1{
+    font-weight: bold;
+    font-size: 2rem;
+    color: #28b951;
+    text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.178);
+
+}
+.CarouselContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.WrapperCarousel{
+    max-width: 1100px;
+    position: relative;
+    display: flex;
+    justify-content: space-between; /* Distributes items evenly along the main-axis */
+    padding: 0 20px;
+    width: 100%; /* Full width of the viewport */
+    overflow-x: auto;
+}
+.WrapperCarousel i:hover{
+    transform: translateY(-55%);
+    background-color: #62F28A;
+}
+
+.WrapperCarousel i{
+ 
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    font-weight: bold; 
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 3px 6px black;
+    z-index: 5;
+    font-size: 1.25rem;
+}
+.WrapperCarousel i:first-child{
+    left: 10px;
+}
+.WrapperCarousel i:last-child{
+    right: 10px;
+}
+
+.WrapperCarousel .carousel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100%/3) - 19px);
+    gap: 20px;
+    overflow: hidden;
+    height: 370px;
+    align-items: center;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel::-webkit-scrollbar{
+    display: none;
+}
+
+.carousel :where(.card, .img){ /* https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity <- This teaches well on specificity of Where:*/
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel.no-transition{
+    scroll-behavior: auto;
+}
+
+.carousel.dragging {
+    scroll-behavior: auto;
+    scroll-snap-type: none;
+}
+.carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+    scroll-behavior: smooth;
+}
+
+.carousel .card {
+    /*height: 342px;*/
+    scroll-snap-align: start;
+    list-style: none;
+    background-color:#62F28A;
+    border-radius: 8px;
+    box-shadow: 1px 3px 4px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   /* padding: 20px;*/
+    
+}
+.card{
+    height: 350px;
+}
+.card:hover{
+    top: -10px;
+    background-color:  rgb(0, 10, 5);
+    position: relative;
+}
+.card .imgCard{
+    background-color: #ffffff;
+    height: 98%;
+    border-radius: 8px;
+    object-fit: cover;
+    text-overflow: ellipsis;
+    white-space: normal; 
+    overflow: hidden;
+}
+.card .imgCard img{
+    width: 100%;
+    height: 50%;
+    border-radius: 8px 8px 0px 0px;
+    object-fit: cover;
+    box-shadow: 0 5px 5px -3px black;
+    background-color: rgb(230, 230, 230);
+}
+.card .imgCard .InnerText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:rgb(55, 109, 45);
+    flex-direction: column;
+    padding: 10px;
+    text-overflow: ellipsis;
+    white-space: normal; 
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.205);
+}
+.card .imgCard h2{
+    font-weight: bold;
+    color:rgb(255, 255, 255);
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.678);
+}
+
+.card .imgCard a{
+    background-color:rgb(0, 248, 165);
+    padding: 15px;
+    text-decoration: none;
+    color:aliceblue;
+    font-weight: bold;
+    margin-top: 5px;
+    text-shadow: 1px 2px 3px black;
+    box-shadow: 1px 2px 5px black;
+}
+
+.card .imgCard a:hover{
+    background-color: rgb(0, 122, 61);
+}
+
+/*Footer Styles*/
+footer{
+    position: relative;
+    margin-top: 150px;
+}
+
+.semiCircle {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 150px 150px 0 0;
+    line-height: 10px;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    font-weight: bold; 
+    background-color: aliceblue;
+    box-shadow: 0 -19px 19px 2px rgba(0, 0, 0, 0.1);
+    z-index: 4;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fa-arrow-up {
+    color: #0fb46f; /* Set icon color */
+    font-size: 2.25rem;/* Adjust icon size as needed */
+}
+.LinkContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #31ee67;
+    z-index: 5;
+}
+.LinkContainer h1{
+    text-align: center;
+    width: 100%;
+    background-color: rgb(173, 255, 180);
+    padding: 10px;
+    font-weight: bold; 
+    text-shadow: 0 3px 6px rgba(0, 0, 0, .5);
+    color:#c5ffd5
+    
+}
+.Contact{
+    text-align: center;
+    width: 100%;
+    background-color: rgb(113, 245, 124);
+    padding: 10px;
+    font-weight: bold; 
+    text-shadow: 0 3px 4px rgba(0, 0, 0, .5);
+    color:#c5ffd5;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+.Contact2{
+    background-color: rgb(207, 255, 162);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+.Contact2 a{
+    padding: 10px;
+    text-align: center;
+    font-weight: bold; 
+    text-shadow: 0 3px 4px rgba(0, 0, 0, .5);
+    color:#c5ffd5;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+.Contact:hover{
+    color:#004414;
+    text-shadow: 0 3px 4px rgba(255, 255, 255, 0.5);
+}
+.LinkContainer h6{
+    text-align: center;
+    width: 100%;
+    background-color: rgb(189, 218, 176);
+    padding: 5px;
+    font-weight: bold; 
+    text-shadow: 0 3px 6px rgba(0, 0, 0, .5);
+    color:#ffffff
+}
+.Links {
+    display: grid;
+    grid-template-columns: repeat(6, 150px);
+}
+.LinkItems{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('Images/blob2.svg'), url('Images/blob.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    Background-blend-mode: color-dodge;
+    box-shadow: 0 17px 9px -19px rgba(0, 0, 0, 0.116);
+}
+.LinkItems:hover{
+    position: relative;
+    top: -10px;
+}
+.LinkItems svg{
+    height: 70px;
+    width: 70px;
+}
+.LinkItems svg:hover{
+    position: relative;
+    top: -10px;
+    
+}
+/*MediaQueries*/
+@media(max-width: 610px){
+    /*Nav Bar Media Queries*/
+    .MenuItem{
+        display: none;
+    }
+    .togglebtn{
+        display: flex;
+    }
+    .NavContainer{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .NavContainer .MenuContainer{
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    .MenuItem.active{
+        display: flex;
+    }
+
+    /*Card Carousel Media Queries */
+    .WrapperCarousel .carousel{
+        grid-auto-columns: 100%;
+    }
+    .GridContainer{
+        grid-template-columns: repeat(3, 125px);
+    }
+    .OuterSectionText{
+        padding: 30px;
+        text-align: center;
+        margin: 20px auto;
+    }
+    .GridItem{
+        padding: 15px;
+    }
+}
+
+@media(max-width: 910px){
+ /*Card Carousel Media Queries */
+    .WrapperCarousel .carousel{
+        grid-auto-columns: calc((100%) );
+    }
+    .Links{
+        grid-template-columns: repeat(3, 125px);
+    }
+    .ImgType{
+        height: 262px;
+        width: 258px;
+    }
+    .Wrapper{
+        width: auto;
+    }
+    .AboutContent{
+        flex-direction: column;
+    }
+    .Column1{
+        width: 100%;
+        padding-right: 0;
+    }
+    .Column2{
+        width: 100%;
+    }
+    .TextContent{
+        padding: 0;
+    }
+    .Spacer{
+        height: 100vh;
+    }
+}

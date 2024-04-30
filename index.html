@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://kit.fontawesome.com/3cf10c2d2f.js" crossorigin="anonymous"></script>
+    <!--Website we will use to check our html syntax: validator.w3.org CSS syntax: jigsaw.w3.org/css-validator/ -->
+</head>
+<body>
+    <!--This will be under the section Nav bar in CSS: /*Navbar*/ Comment-->
+    <nav class = "NavContainer">
+        <div class ="LogoContainer">
+            <img src="Images/MakoTaco.jpg" class="Logo" alt="Melissa De Jesus Logo">
+            <a href ="index.html" class="ExtraBold MenuItem">Melissa De Jesus</a>
+        </div>
+        <div class = "MenuContainer">
+            <div class = "MenuItem">
+            <a href="Portfolios.html" class = "ExtraBold">Portfolio Requirements</a>
+            </div>
+            <div class = "MenuItem">
+                <a href="contactme.html" class = "ExtraBold">Contact Me</a>
+            </div>
+            <div class = "MenuItem">
+                <a href="About.html" class = "ExtraBold">About</a>
+            </div>
+            <div class = "MenuItem">
+                <a href="Graphics.html" class = "ExtraBold">Graphic Art</a>
+            </div>
+            <div class = "MenuItem">
+                <a href="Photography.html" class = "ExtraBold">Photography</a>
+            </div>
+            <a href ="#" class ="togglebtn">
+                <span class ="bar"></span>
+                <span class ="bar"></span>
+                <span class ="bar"></span>
+            </a>
+        </div>
+    </nav>
+    <header>
+        <div class = "AboutContainer">
+            <div class="AboutContent">
+                <video class = "loop" src="Images/assets_07d6447e (online-video-cutter.com) (2).mp4" autoplay loop muted></video>
+                <div>
+                    <img class ="ImgType" src="Images/8-KJJsVZI0AZUf8an.png" alt ="AnimeToast">
+                </div>
+                <div class ="Wrapper ExtraBold">
+                    <h1><strong>Hello</strong>, my name is <span class="SpecialColor">Melissa.</span></h1>
+                    <h1>I am a <span class ="MultiText">Developer.</span></h1>
+                    <p class="AboutText">Hey there, I'm Melissa De Jesus a full-stack developer with a passion for building amazing, user-centeric applications. Lets work together to ensure you get what your looking for, success.</p>
+                    <div class="CVbtns">
+                        <button>Download Resume</button>
+                        <button>Hire Me</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--for the SVGs I used a site called: https://icons8.com/ -->
+    <!---This is audio that will be randomly be selected in the javascript when you hover over the grid items after the first click on the page-->
+        <audio id="sound1" src="Audio/shooting-sound-fx-159024.mp3"></audio>
+        <audio id="sound2" src="Audio/stop-13692.mp3"></audio>
+        <audio id="sound3" src="Audio/uiclick4-79818.mp3"></audio>
+        <div class ="SkillContainer">
+            <div class = "OuterSectionText">
+                <h1> My Skills & Utilities</h1>
+            </div>
+            <div class ="GridContainer">
+                <div class="GridItem">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                        <path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path><path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path><path fill="#FFF" d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z"></path><path fill="#EEE" d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z"></path>
+                    </svg>
+                </div>
+                <div class="GridItem">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 100 100">
+                        <path fill="#3070b7" d="M83.105,15H16.895l5.842,66.211L50,89l27.263-7.789L83.105,15L83.105,15z"></path><path fill="#1f212b" d="M50,90c-0.093,0-0.185-0.013-0.274-0.039l-27.263-7.79c-0.398-0.114-0.686-0.461-0.722-0.874	l-5.843-66.21c-0.024-0.279,0.069-0.556,0.259-0.763S16.614,14,16.895,14h66.211c0.28,0,0.548,0.118,0.737,0.325	s0.283,0.484,0.259,0.763l-5.843,66.21c-0.036,0.413-0.323,0.76-0.722,0.874l-27.263,7.79C50.185,89.987,50.093,90,50,90z M23.673,80.438L50,87.96l26.327-7.522L82.014,16H17.986L23.673,80.438z"></path><polygon fill="#09ace3" points="50,20.5 50,82.963 71.811,76.732 76.709,20.5"></polygon><polygon fill="#fefdef" points="67.721,30.579 50,30.579 49,34 50,38.368 59.542,38.368 58.958,46.158 50,46.158 49,50 50,53.947 58.568,53.947 57.984,62.711 50,65.437 49,70 50,73.616 65.384,68.553 66.747,46.158 66.747,46.158"></polygon><path fill="#eeecd9" d="M50,30.579v7.789H32.668l-0.584-7.789H50z M41.042,46.158l0.389,7.789H50v-7.789H41.042z M41.821,57.842h-7.789l0.584,10.711L50,73.616v-8.179l-7.984-2.726L41.821,57.842z"></path><path fill="#1f212b" d="M50,31.079c-0.276,0-0.5-0.224-0.5-0.5V20.5c0-0.276,0.224-0.5,0.5-0.5h3.5	c0.276,0,0.5,0.224,0.5,0.5S53.776,21,53.5,21h-3v9.579C50.5,30.855,50.276,31.079,50,31.079z"></path><path fill="#1f212b" d="M60.5,21h-4c-0.276,0-0.5-0.224-0.5-0.5s0.224-0.5,0.5-0.5h4c0.276,0,0.5,0.224,0.5,0.5	S60.776,21,60.5,21z"></path><path fill="#1f212b" d="M50,83.463c-0.107,0-0.213-0.035-0.301-0.101c-0.126-0.095-0.199-0.243-0.199-0.399V76.5	c0-0.276,0.224-0.5,0.5-0.5s0.5,0.224,0.5,0.5v5.8l20.843-5.955L76.163,21H63.5c-0.276,0-0.5-0.224-0.5-0.5s0.224-0.5,0.5-0.5	h13.209c0.141,0,0.273,0.059,0.368,0.162s0.143,0.242,0.13,0.381l-4.898,56.231c-0.018,0.207-0.161,0.38-0.36,0.438l-21.811,6.232	C50.092,83.457,50.046,83.463,50,83.463z"></path><path fill="#1f212b" d="M50,65.937c-0.276,0-0.5-0.224-0.5-0.5v-8.49c0-0.276,0.224-0.5,0.5-0.5s0.5,0.224,0.5,0.5v8.49	C50.5,65.713,50.276,65.937,50,65.937z"></path><path fill="#1f212b" d="M50,46.658c-0.276,0-0.5-0.224-0.5-0.5v-4.789c0-0.276,0.224-0.5,0.5-0.5s0.5,0.224,0.5,0.5v4.789	C50.5,46.434,50.276,46.658,50,46.658z"></path><path fill="#1f212b" d="M50,74.116c-0.053,0-0.105-0.008-0.156-0.025L34.46,69.028c-0.195-0.064-0.332-0.242-0.343-0.448	l-0.585-10.71c-0.008-0.137,0.042-0.271,0.136-0.371c0.095-0.1,0.226-0.156,0.363-0.156h7.79c0.269,0,0.489,0.212,0.5,0.48	l0.181,4.526L50,64.909l7.508-2.564l0.526-7.897H41.432c-0.267,0-0.486-0.209-0.499-0.475l-0.39-7.79	c-0.007-0.137,0.042-0.271,0.137-0.37s0.226-0.155,0.362-0.155h17.452l0.509-6.789H32.668c-0.262,0-0.479-0.202-0.499-0.462	l-0.584-7.79c-0.01-0.139,0.038-0.276,0.133-0.377c0.095-0.102,0.228-0.16,0.366-0.16h35.637c0.138,0,0.27,0.057,0.364,0.158	s0.144,0.236,0.135,0.374l-2.337,37.973c-0.013,0.205-0.148,0.381-0.343,0.445l-15.384,5.063C50.105,74.107,50.053,74.116,50,74.116	z M35.097,68.185L50,73.089l14.905-4.906l2.283-37.104H32.623l0.509,6.79h26.41c0.139,0,0.271,0.058,0.366,0.16	c0.095,0.102,0.143,0.238,0.133,0.377l-0.584,7.789c-0.02,0.261-0.237,0.462-0.499,0.462H41.567l0.34,6.79h16.661	c0.139,0,0.271,0.057,0.365,0.158s0.143,0.237,0.134,0.375l-0.584,8.763c-0.014,0.201-0.146,0.375-0.338,0.44l-7.984,2.727	c-0.104,0.036-0.219,0.036-0.322,0l-7.984-2.727c-0.196-0.067-0.33-0.247-0.339-0.453l-0.175-4.388H34.56L35.097,68.185z"></path>
+                    </svg>
+                </div>
+                <div class="GridItem">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 100 100">
+                        <path fill="#472b29" d="M63.309,25.752c1.891,0,3.577,1.279,4.1,3.112c0.054,0.19-0.056,0.387-0.245,0.441	c-0.034,0.009-0.067,0.013-0.098,0.013c-0.155,0-0.298-0.103-0.342-0.26c-0.435-1.526-1.839-2.593-3.413-2.593	c-0.167,0-0.328,0.02-0.488,0.041c-0.017,0.003-0.033,0.004-0.05,0.004c-0.173,0-0.327-0.131-0.351-0.31	c-0.027-0.195,0.11-0.375,0.305-0.401C62.916,25.774,63.11,25.752,63.309,25.752L63.309,25.752z"></path><path fill="#78a1d1" d="M33.468,32.022l0.023-5.135C33.491,19.592,39.457,14,46.75,14h9.905	c6.564,0,11.834,5.002,11.811,11.418v13.207c0.023,6.713-5.299,12.035-11.864,12.035H42.075c-5.835,0-10.565,4.73-10.565,10.565	l-0.101,6.779h-5.283C19.561,68.004,14,62.303,14,55.738V46c0-7.83,6.52-13.708,14.344-13.978H33.468z"></path><path fill="#eddc67" d="M66.409,68.004l0.101,5.11C66.509,80.409,60.7,86,53.406,86H43.5c-6.564,0-11.991-5-12.092-11.875	V60.916c0.101-6.254,5.423-11.576,11.987-11.576h14.528c5.835,0,10.565-4.73,10.565-10.565l-0.023-6.753h5.283	c6.566,0,12.25,5.425,12.25,11.99v9.738c0,7.83-6.644,13.985-14.468,14.254H66.409z"></path><circle cx="45.493" cy="23.493" r="3.5" fill="#1f212b"></circle><circle cx="54.5" cy="76.5" r="3.5" fill="#1f212b"></circle><path fill="#1f212b" d="M53.406,87H43.5c-7.34,0-13.396-5.771-13.5-12.864v-5.135l-3.874,0.003	C19.011,69.004,13,62.929,13,55.738V46c0-8.103,6.725-14.682,15.31-14.977L32,31.013v-4.138C32,19.225,38.617,13,46.75,13h9.905	c3.694,0,7.275,1.468,9.826,4.027c2.279,2.288,3.529,5.254,3.519,8.352v5.609l3.754,0.034C80.935,31.024,87,36.972,87,44.012v9.738	c0,8.117-6.924,14.96-15.434,15.253l-3.574-0.002L68,73.112C68,80.771,61.453,87,53.406,87z M31,67c0.265,0,0.52,0.105,0.707,0.293	S32,67.734,32,68v6.121C32.088,80.113,37.247,85,43.5,85h9.906C60.351,85,66,79.668,66,73.114l-0.01-5.112	c-0.001-0.266,0.104-0.521,0.293-0.709C66.471,67.105,66.725,67,66.99,67h0.001l4.542,0.004C78.943,66.748,85,60.802,85,53.75	v-9.738c0-5.957-5.152-10.989-11.25-10.989c-0.003,0-0.006,0-0.009,0l-4.75-0.043c-0.549-0.005-0.991-0.451-0.991-1v-6.604	c0.009-2.565-1.033-5.027-2.936-6.936C62.887,16.254,59.821,15,56.655,15H46.75C39.72,15,34,20.327,34,26.875v5.135	c0,0.551-0.446,0.998-0.997,1l-4.656,0.013C20.876,33.28,15,38.981,15,46v9.738c0,6.001,5.198,11.266,11.125,11.266L31,67L31,67z"></path><path fill="#1f212b" d="M52.375,33h-19.5c-0.276,0-0.5-0.224-0.5-0.5s0.224-0.5,0.5-0.5h19.5c0.276,0,0.5,0.224,0.5,0.5	S52.651,33,52.375,33z"></path><path fill="#1f212b" d="M67,68H47.5c-0.276,0-0.5-0.224-0.5-0.5s0.224-0.5,0.5-0.5H67c0.276,0,0.5,0.224,0.5,0.5	S67.276,68,67,68z"></path><path fill="#1f212b" d="M67,65H54.5c-0.276,0-0.5-0.224-0.5-0.5s0.224-0.5,0.5-0.5H67c0.276,0,0.5,0.224,0.5,0.5	S67.276,65,67,65z"></path><path fill="#1f212b" d="M51.5,65h-4c-0.276,0-0.5-0.224-0.5-0.5s0.224-0.5,0.5-0.5h4c0.276,0,0.5,0.224,0.5,0.5	S51.776,65,51.5,65z"></path><path fill="#1f212b" d="M45.5,36H33c-0.276,0-0.5-0.224-0.5-0.5S32.724,35,33,35h12.5c0.276,0,0.5,0.224,0.5,0.5	S45.776,36,45.5,36z"></path><path fill="#1f212b" d="M52.5,36h-4c-0.276,0-0.5-0.224-0.5-0.5s0.224-0.5,0.5-0.5h4c0.276,0,0.5,0.224,0.5,0.5	S52.776,36,52.5,36z"></path><path fill="#1f212b" d="M68.112,42.125c-0.044,0-0.09-0.006-0.135-0.019c-0.266-0.074-0.421-0.35-0.347-0.616	C67.876,40.612,68,39.699,68,38.774v-6.649c0-0.276,0.224-0.5,0.5-0.5s0.5,0.224,0.5,0.5v6.649c0,1.016-0.137,2.02-0.406,2.985	C68.532,41.98,68.331,42.125,68.112,42.125z"></path><path fill="#1f212b" d="M57.875,50c-0.276,0-0.5-0.224-0.5-0.5s0.224-0.5,0.5-0.5c3.304,0,6.54-1.782,8.446-4.651	c0.152-0.232,0.465-0.292,0.692-0.14c0.23,0.152,0.293,0.463,0.14,0.692C65.064,48.047,61.509,50,57.875,50z"></path><path fill="#1f212b" d="M55.875,50H53.25c-0.276,0-0.5-0.224-0.5-0.5s0.224-0.5,0.5-0.5h2.625c0.276,0,0.5,0.224,0.5,0.5	S56.151,50,55.875,50z"></path><path fill="#1f212b" d="M31.5,74.625c-0.276,0-0.5-0.224-0.5-0.5V60.916C31.105,54.342,36.659,49,43.379,49h6.996	c0.276,0,0.5,0.224,0.5,0.5s-0.224,0.5-0.5,0.5h-6.996C37.201,50,32.097,54.9,32,60.924v13.201C32,74.401,31.776,74.625,31.5,74.625	z"></path>
+                    </svg>
+                </div>
+                <div class="GridItem">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                        <path fill="#455a64" d="M24,44C13,44,4,35,4,24C4,13,13,4,24,4c11,0,20,9,20,20C44,35,35,44,24,44z M24,6 C14.1,6,6,14.1,6,24c0,9.9,8.1,18,18,18c9.9,0,18-8.1,18-18C42,14.1,33.9,6,24,6z"></path><path fill="#455a64" d="M9,28c0-7.7,7.2-15.4,14-17c0,0-3,2.4-3,4c0,3.3,2,2,2,2s0,12.2,0,13s0.9,1,2,1s3-1.3,3-1.3 s0-9.5,0-10.7s-1.4-2.5-2-3c1.7,0,3,1,3,1s1.3-2.5,7-4c-0.9,1.1-3,4.1-3,5.1s0,10.7,0,11.3s0.7,0.6,1.1,0.6c0.4,0,2.7-0.6,4.9-3 c0,0.7-3.6,6.2-8,9l-3-3l-3,4c0,0-6.1-0.7-9-5c0.8,0.1,2,0.2,2-1c0-1.2,0-9.2,0-10s-0.4-1.2-1-1.2C15.3,19.8,12.7,21.5,9,28z"></path>
+                    </svg>
+                </div>
+                <div class="GridItem">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                        <path d="M 28.1875 -0.00390625 C 30.9375 6.359375 18.320313 10.289063 17.152344 15.59375 C 16.074219 20.460938 24.640625 26.121094 24.644531 26.121094 C 23.34375 24.105469 22.402344 22.441406 21.097656 19.304688 C 18.890625 14 34.53125 9.203125 28.1875 -0.00390625 Z M 36.550781 8.8125 C 36.550781 8.8125 25.503906 9.511719 24.941406 16.582031 C 24.691406 19.730469 27.84375 21.410156 27.9375 23.703125 C 28.007813 25.570313 26.050781 27.128906 26.050781 27.128906 C 26.050781 27.128906 29.601563 26.460938 30.714844 23.605469 C 31.945313 20.4375 28.328125 18.273438 28.691406 15.738281 C 29.042969 13.3125 36.550781 8.8125 36.550781 8.8125 Z M 39.230469 25.144531 C 38.074219 25.09375 36.789063 25.476563 35.625 26.3125 C 37.90625 25.824219 39.835938 27.21875 39.835938 28.828125 C 39.835938 32.453125 34.597656 35.878906 34.597656 35.878906 C 34.597656 35.878906 42.707031 34.953125 42.707031 29 C 42.707031 26.539063 41.152344 25.234375 39.230469 25.144531 Z M 19.183594 25.152344 C 19.183594 25.152344 9.0625 25.015625 9.0625 27.878906 C 9.0625 30.871094 22.316406 31.082031 31.78125 29.238281 C 31.78125 29.238281 34.308594 27.507813 34.980469 26.863281 C 28.777344 28.128906 14.621094 28.296875 14.621094 27.203125 C 14.621094 26.191406 19.183594 25.152344 19.183594 25.152344 Z M 16.738281 30.722656 C 15.1875 30.722656 12.871094 31.921875 12.871094 33.078125 C 12.871094 35.402344 24.5625 37.195313 33.21875 33.796875 L 30.222656 31.960938 C 24.355469 33.839844 13.539063 33.238281 16.738281 30.722656 Z M 18.179688 35.921875 C 16.050781 35.921875 14.671875 37.234375 14.671875 38.203125 C 14.671875 41.1875 27.378906 41.488281 32.414063 38.453125 L 29.214844 36.417969 C 25.453125 38.007813 16.007813 38.222656 18.179688 35.921875 Z M 11.089844 38.625 C 7.621094 38.554688 5.367188 40.113281 5.367188 41.40625 C 5.363281 48.28125 40.890625 47.949219 40.890625 40.921875 C 40.890625 39.757813 39.515625 39.203125 39.019531 38.9375 C 41.921875 45.65625 9.96875 45.136719 9.96875 41.171875 C 9.96875 40.269531 12.3125 39.382813 14.492188 39.808594 L 12.644531 38.757813 C 12.101563 38.675781 11.582031 38.632813 11.089844 38.625 Z M 44.636719 43.25 C 39.234375 48.367188 25.546875 50.234375 11.78125 47.074219 C 25.542969 52.703125 44.566406 49.535156 44.636719 43.25 Z"></path>
+                    </svg>
+                </div>
+                <div class="GridItem">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                        <path d="M42.924,16.01c-0.1-0.358-0.294-0.685-0.563-0.948c-0.135-0.131-0.288-0.247-0.458-0.342	c-3.356-1.883-13.452-7.551-16.807-9.434c-0.678-0.381-1.514-0.381-2.193,0C19.549,7.169,9.451,12.837,6.097,14.72	c-0.509,0.286-0.872,0.753-1.021,1.291C5.026,16.19,5,16.376,5,16.567v0c0,3.766,0,15.101,0,18.867c0,0.762,0.418,1.465,1.096,1.846	c1.258,0.706,3.465,1.945,5.908,3.316c2.85,1.6,6.023,3.381,8.39,4.71c1.014,0.569,1.88,1.055,2.509,1.409	c0.169,0.095,0.349,0.167,0.533,0.214C23.621,46.976,23.81,47,23.999,47s0.379-0.024,0.563-0.071	c0.184-0.048,0.364-0.119,0.534-0.214c3.356-1.883,13.452-7.551,16.807-9.434C42.582,36.899,43,36.195,43,35.433	c0-3.766,0-15.101,0-18.867C43,16.375,42.974,16.189,42.924,16.01z"></path><path fill="#fff" fill-rule="evenodd" d="M22.954,4.24c0.648-0.363,1.445-0.363,2.092,0	c3.2,1.796,12.832,7.203,16.033,9c0.648,0.362,1.046,1.034,1.046,1.761c0,3.593,0,14.406,0,17.998c0,0.727-0.399,1.398-1.046,1.762	c-3.2,1.796-12.832,7.203-16.033,9c-0.648,0.363-1.445,0.363-2.092,0c-3.2-1.796-12.832-7.203-16.033-9	C6.274,34.397,5.875,33.726,5.875,33c0-3.593,0-14.406,0-17.998c0-0.727,0.399-1.398,1.046-1.762	C10.121,11.443,19.754,6.036,22.954,4.24z" clip-rule="evenodd"></path><path d="M24,5c0.029,0,0.073,0.005,0.117,0.03l5.978,3.356l10.831,6.08C40.972,14.491,41,14.529,41,14.566v18.867	c0,0.037-0.029,0.077-0.076,0.103L35.02,36.85l-10.903,6.12C24.073,42.995,24.029,43,23.999,43c-0.029,0-0.073-0.005-0.117-0.03	l-6.084-3.415L7.076,33.536C7.029,33.51,7,33.471,7,33.434V14.567c0-0.037,0.029-0.077,0.076-0.103l8.318-4.669l8.487-4.764	C23.926,5.005,23.97,5,24,5 M24,3c-0.379,0-0.757,0.095-1.097,0.286C19.549,5.169,9.451,10.837,6.097,12.72	C5.418,13.101,5,13.805,5,14.567c0,3.766,0,15.101,0,18.867c0,0.762,0.418,1.465,1.096,1.846c3.356,1.883,13.452,7.551,16.807,9.434	C23.242,44.904,23.62,45,23.999,45c0.379,0,0.757-0.095,1.097-0.286c3.356-1.883,13.452-7.551,16.807-9.434	C42.582,34.899,43,34.195,43,33.433c0-3.766,0-15.101,0-18.867c0-0.762-0.418-1.466-1.097-1.846	c-3.356-1.883-13.452-7.551-16.807-9.434C24.757,3.096,24.379,3,24,3L24,3z"></path><rect width="2" height="10" x="31" y="19" fill-rule="evenodd" clip-rule="evenodd"></rect><rect width="2" height="10" x="35" y="19" fill-rule="evenodd" clip-rule="evenodd"></rect><rect width="10" height="2" x="29" y="21" fill-rule="evenodd" clip-rule="evenodd"></rect><rect width="10" height="2" x="29" y="25" fill-rule="evenodd" clip-rule="evenodd"></rect><path d="M22,37c-7.168,0-13-5.832-13-13s5.832-13,13-13c3.816,0,7.43,1.68,9.912,4.607c0.192,0.227,0.274,0.527,0.222,0.82	c-0.052,0.292-0.231,0.547-0.489,0.694l-3.56,2.033c-0.391,0.223-0.877,0.158-1.195-0.153C25.571,17.711,23.834,17,22,17	c-3.86,0-7,3.141-7,7s3.14,7,7,7c1.897,0,3.677-0.754,5.01-2.122c0.313-0.323,0.804-0.396,1.198-0.179l3.589,1.975	c0.26,0.143,0.443,0.394,0.5,0.685s-0.019,0.592-0.205,0.822C29.604,35.243,25.926,37,22,37z M22,13c-6.065,0-11,4.935-11,11	s4.935,11,11,11c2.917,0,5.672-1.147,7.727-3.183l-1.844-1.015C26.246,32.225,24.185,33,22,33c-4.962,0-9-4.037-9-9s4.038-9,9-9	c2.105,0,4.109,0.727,5.721,2.061l1.829-1.045C27.513,14.087,24.822,13,22,13z"></path>
+                    </svg>
+                </div>
+                <div class="GridItem"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                        <path fill="#00b0ff" d="M20 25.026L5.011 25 5.012 37.744 20 39.818zM22 25.03L22 40.095 42.995 43 43 25.066zM20 8.256L5 10.38 5.014 23 20 23zM22 7.973L22 23 42.995 23 42.995 5z"></path>
+                    </svg>
+                </div>
+                <div class="GridItem">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                        <linearGradient id="HjBUFHyNtcsDcBgnZBZ2Sa_0OQR1FYCuA9f_gr1" x1="37.8" x2="37.8" y1="43.37" y2="7.42" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#29b6f6"></stop><stop offset="1" stop-color="#13b2f6"></stop></linearGradient><path fill="url(#HjBUFHyNtcsDcBgnZBZ2Sa_0OQR1FYCuA9f_gr1)" d="M34.176,4.249c0.188,0.092,5.688,2.716,8.374,3.998C43.437,8.67,44,9.564,44,10.546v26.86	c0,0.981-0.559,1.874-1.443,2.299c-2.548,1.228-7.611,3.666-7.948,3.826C34.361,43.649,33.709,44,33.181,44	c-0.678,0-1.133-0.316-1.58-0.73L34,35.711V5.715l-2.254-1.135C32.228,4.109,32.896,4,33.291,4C33.653,4,33.948,4.138,34.176,4.249z"></path><linearGradient id="HjBUFHyNtcsDcBgnZBZ2Sb_0OQR1FYCuA9f_gr2" x1="6.085" x2="34.793" y1="34.801" y2="7.173" gradientUnits="userSpaceOnUse"><stop offset=".115" stop-color="#0076bb"></stop><stop offset=".257" stop-color="#0069b0"></stop><stop offset=".28" stop-color="#0069b0"></stop><stop offset=".424" stop-color="#0069b0"></stop><stop offset=".491" stop-color="#0072b7"></stop><stop offset=".577" stop-color="#0076bb"></stop><stop offset=".795" stop-color="#0076bb"></stop><stop offset="1" stop-color="#006eb9"></stop></linearGradient><path fill="url(#HjBUFHyNtcsDcBgnZBZ2Sb_0OQR1FYCuA9f_gr2)" d="M9,33.896l25-19.023V5.83c0-1.299-1.662-1.808-2.337-1.184	C31.008,5.25,4.658,29.239,4.658,29.239c-0.9,0.83-0.849,2.267,0.107,3.032c0,0,1.324,1.232,1.803,1.574	C7.304,34.37,8.271,34.43,9,33.896z"></path><path fill="#0288d1" d="M9,14.104l25,19.054v8.771c0,1.198-1.42,2.193-2.399,1.341L4.658,18.761	c-0.9-0.83-0.849-2.267,0.107-3.032c0,0,1.324-1.232,1.803-1.574C7.304,13.63,8.271,13.57,9,14.104z"></path>
+                    </svg>
+                </div>
+                <div class="GridItem">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                        <path d="M 16.851562 0.01171875 C 16.72325 0.030984375 16.595766 0.074484375 16.478516 0.14648438 C 16.006516 0.43448438 15.858484 1.0504844 16.146484 1.5214844 L 17.787109 4.203125 C 14.836798 6.1839524 12.737788 9.3350589 12.169922 13 L 37.830078 13 C 37.262801 9.3350589 35.163102 6.1839524 32.212891 4.203125 L 33.853516 1.5214844 C 34.141516 1.0504844 33.993484 0.43448437 33.521484 0.14648438 C 33.049484 -0.14151562 32.434484 0.007515625 32.146484 0.47851562 L 30.472656 3.2148438 C 28.809508 2.4391021 26.957877 2 25 2 C 23.042123 2 21.190519 2.4391021 19.527344 3.2148438 L 17.853516 0.47851562 C 17.636766 0.12526562 17.2365 -0.046078125 16.851562 0.01171875 z M 8 5 C 5.794 5 4 6.794 4 9 C 4 11.206 5.794 13 8 13 L 10.148438 13 C 10.558437 9.946 11.888563 7.187 13.851562 5 L 8 5 z M 19.5 7 C 20.328 7 21 7.672 21 8.5 C 21 9.328 20.328 10 19.5 10 C 18.672 10 18 9.328 18 8.5 C 18 7.672 18.672 7 19.5 7 z M 30.5 7 C 31.328 7 32 7.672 32 8.5 C 32 9.328 31.328 10 30.5 10 C 29.672 10 29 9.328 29 8.5 C 29 7.672 29.672 7 30.5 7 z M 4 13.460938 L 4 39 C 4 41.757 6.243 44 9 44 L 13.279297 44 L 12.849609 44.912109 C 12.060609 46.589109 12.653219 48.612578 14.199219 49.517578 C 14.738219 49.832578 15.350703 50 15.970703 50 C 17.339703 50 18.596781 49.206563 19.175781 47.976562 L 21.037109 44 L 28.962891 44 L 30.820312 47.970703 C 31.402312 49.205703 32.660297 50 34.029297 50 C 34.649297 50 35.261781 49.832578 35.800781 49.517578 C 37.346781 48.612578 37.940391 46.589109 37.150391 44.912109 L 36.720703 44 L 39 44 L 39 24 C 39 23.448 39.447 23 40 23 L 44 23 C 46.206 23 48 21.206 48 19 C 48 16.794 46.206 15 44 15 L 40 15 L 12 15 L 8 15 C 6.462 15 5.063 14.414937 4 13.460938 z M 25 20 C 25.553 20 26 20.448 26 21 L 26 23.142578 C 27.721 23.589578 29 25.142 29 27 C 29 28.098 28.554938 29.093406 27.835938 29.816406 L 35.341797 45.763672 C 35.680797 46.483672 35.476016 47.391969 34.791016 47.792969 C 34.549016 47.934969 34.286297 48 34.029297 48 C 33.466297 48 32.888813 47.666047 32.632812 47.123047 L 31.171875 44 L 27.130859 35.363281 C 26.284859 33.555281 23.715141 33.555281 22.869141 35.363281 L 18.828125 44 L 17.367188 47.123047 C 17.111187 47.666047 16.533703 48 15.970703 48 C 15.713703 48 15.450984 47.934969 15.208984 47.792969 C 14.522984 47.391969 14.320203 46.484625 14.658203 45.765625 L 22.162109 29.816406 C 21.444109 29.092406 21 28.098 21 27 C 21 25.142 22.279 23.589578 24 23.142578 L 24 21 C 24 20.448 24.447 20 25 20 z M 48 23.460938 C 46.937 24.414938 45.538 25 44 25 L 41 25 L 41 45 L 41 49 C 41 49.552 41.447 50 42 50 L 43 50 C 45.757 50 48 47.757 48 45 L 48 23.460938 z M 25 25 A 2 2 0 0 0 25 29 A 2 2 0 0 0 25 25 z"></path>
+                    </svg>
+                </div>
+                <div class="GridItem">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                        <polygon fill="#0d91d6" points="24,6 17.99,12.35 11.97,18.69 6,25 6,6"></polygon><polygon fill="#f88909" points="24,6 23.96,6 17.97,12.33 11.96,18.68 6,24.97 6,25 6,25.09 6,42 14.69,33.31 20.87,27.13 27.06,20.94 33.25,14.75 42,6"></polygon><polygon fill="#c757bc" points="14.69,33.31 6,42 6,25.09"></polygon><polygon fill="#d3638f" points="20.87,27.13 14.69,33.31 6,25.09 6,25 11.97,18.69"></polygon><polygon fill="#e07063" points="27.06,20.94 20.87,27.13 11.97,18.69 17.99,12.35"></polygon><polygon fill="#ec7d36" points="33.25,14.75 27.06,20.94 17.99,12.35 24,6"></polygon><polygon fill="#f88909" points="42,6 33.25,14.75 24,6"></polygon><polygon fill="#0095d5" points="11.51,19.15 7.99,22.88 6,21 6,13.94"></polygon><polygon fill="#2b88da" points="15.03,15.42 11.51,19.15 6,13.94 6,6.87"></polygon><polygon fill="#557bde" points="18.56,11.7 15.03,15.42 6,6.87 6,6 12.53,6"></polygon><polygon fill="#806ee3" points="22.08,7.97 18.56,11.7 12.53,6 24,6"></polygon><polygon fill="#0095d5" points="23,25 6,42 9.35,42 17.52,42 40,42"></polygon><polygon fill="#2b88da" points="25.68,42 17.52,42 11.76,36.25 15.84,32.17"></polygon><polygon fill="#557bde" points="33.86,42 25.68,42 15.84,32.17 19.92,28.09"></polygon><polygon fill="#806ee3" points="42,42 33.86,42 19.92,28.09 24,24"></polygon>
+                    </svg>
+                </div>
+                <div class="GridItem">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                        <linearGradient id="Oi_wi5LpyfLgcWZN6yf8Ta_KDGdN57NLSJa_gr1" x1="1" x2="45.667" y1="25.776" y2="25.776" gradientTransform="matrix(1 0 0 -1 0 49.276)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffa402"></stop><stop offset="1" stop-color="#f80"></stop></linearGradient><path fill="url(#Oi_wi5LpyfLgcWZN6yf8Ta_KDGdN57NLSJa_gr1)" d="M39,16C35.612,13.527,26.115,5.591,26.115,5.591c-1.055-0.892-2.632-0.76-3.523,0.294	c-0.893,1.054-0.761,2.631,0.293,3.523L28.311,14H9.5C8.119,14,7,15.119,7,16.5S8.119,19,9.5,19h8.787L1.978,31.517	c-1.095,0.841-1.302,2.41-0.461,3.505C2.009,35.664,2.751,36,3.502,36c0.531,0,1.066-0.168,1.521-0.517l9.996-7.672	C15.016,27.927,15,28.038,15,28.154C15,35.971,21.532,42,30,42s15.667-6.029,15.667-13.846C45.667,23.275,42.876,18.83,39,16z"></path><ellipse cx="30.5" cy="27" fill="#fff" rx="9.75" ry="9"></ellipse><path d="M30.5,18c5.385,0,9.75,4.029,9.75,9s-4.365,9-9.75,9s-9.75-4.029-9.75-9S25.115,18,30.5,18 M30.5,17.5 c-5.652,0-10.25,4.262-10.25,9.5s4.598,9.5,10.25,9.5s10.25-4.262,10.25-9.5S36.152,17.5,30.5,17.5L30.5,17.5z" opacity=".07"></path><path d="M30.5,17.5c5.652,0,10.25,4.262,10.25,9.5s-4.598,9.5-10.25,9.5S20.25,32.238,20.25,27S24.848,17.5,30.5,17.5 M30.5,17 c-5.928,0-10.75,4.486-10.75,10s4.822,10,10.75,10s10.75-4.486,10.75-10S36.428,17,30.5,17L30.5,17z" opacity=".05"></path><ellipse cx="30.5" cy="27" fill="#0370c8" rx="5.5" ry="5"></ellipse><path d="M30.5,21.5c3.308,0,6,2.467,6,5.5s-2.692,5.5-6,5.5s-6-2.467-6-5.5S27.192,21.5,30.5,21.5 M30.5,21 c-3.584,0-6.5,2.692-6.5,6s2.916,6,6.5,6s6.5-2.692,6.5-6S34.084,21,30.5,21L30.5,21z" opacity=".05"></path><path d="M30.5,22c3.038,0,5.5,2.239,5.5,5s-2.462,5-5.5,5S25,29.761,25,27S27.462,22,30.5,22 M30.5,21.5c-3.308,0-6,2.467-6,5.5 s2.692,5.5,6,5.5s6-2.467,6-5.5S33.808,21.5,30.5,21.5L30.5,21.5z" opacity=".07"></path>
+                    </svg> 
+                </div>
+            </div>
+        </div>
+    <div class ="WorkExperience">
+        <div class = "OuterSectionText">
+            <h1>My Work Experience</h1>
+            <p>I've worked with all sorts of companies, leveling up my skills and teaming up with smart people. Here's the rundown:</p>
+        </div>
+        <div class = "timelineContainer">
+            <div class = "timeline">
+                <img src ="Images/Florida_Atlantic_Owls_logo.png" alt ="Init FIU Logo">
+                <div class = "timelineContent Left-Container">
+                    <h2>Bachelor of Arts: Multimedia</h2>
+                    <small>Florida Atlantic University, Boca Raton, FL</small>
+                    <small>Jan 2023 - Present 2024</small>
+                    <ul>
+                        <li>Minor in Management Information Systems.</li>
+                        <li>Developed game mechanics, UI, and graphics using Unity 2021 and C#, supported by Visual Studio for code integration and debugging.</li>
+                        <li>Relevant Completed Coursework: Intro Computer System Software Development, AP Computer Science Principles, Management Information Systems, Advance 3-D Modeling, and introduction to Programing in C</li>
+                    </ul>
+                    <span class = "left-container-arrow"></span>
+                </div>
+            </div>
+            <div class = "timeline">
+                <img src ="Images/medpro.jpg" alt ="InitFIULOGO">
+                <div class = "timelineContent Right-Container">
+                <h2>Operations Support Analyst</h2>
+                    <small>Medpro Helathcare Staffing</small>
+                    <small>May 2023 - Present 2024</small>
+                    <ul>
+                        <li>Created reports, dashboards, and assisted users with better visibility of their individual workload and dashboards.</li>
+                        <li>Assisted in automated processes to streamline report time and enhancement </li>
+                        <li>andled Helpdesk tickets via Salesforce– problem solved user issues and assisted in report writing</li>
+                    </ul>
+                    <span class = "right-container-arrow"></span>
+                </div>
+            </div>
+            <div class = "timeline">
+                <img src ="Images/GemaireDistributors.jpg" alt ="Gemaire Distributors Logo">
+                <div class = "timelineContent Left-Container">
+                    <h2>IT intern</h2>
+                    <small>Gemaire Distributors</small>
+                    <small>May 2022 - Oct 2023</small>
+                    <ul>
+                        <li>Call center agent that worked with a team of five people responsible for both inbound & outbound calls</li>
+                        <li>Answering approximately 200+ calls per week and growing customer engagement from 20% to 45%</li>
+                        <li>Assisted with clerical tasks, creating scripts, and managing client emails</li>
+                    </ul>
+                    <span class = "left-container-arrow"></span>
+                </div>
+            </div>
+            <div class = "timeline">
+                <img src ="Images/IJS_Logo_PNG_forIcontact.png" alt ="FIU Tech Logo">
+                <div class = "timelineContent Right-Container">
+                    <h2>Volunteer</h2>
+                    <small>In Jacobs Shoes</small>
+                    <small>March 2022 - July 2022</small>
+                    <ul>
+                        <li>Sorted and distributed goods to disadvantaged families.</li>
+                        <li>Kept facilities organized, clean, and maintained to meet the program's needs</li>
+                        <li>Assisted with clerical tasks</li>
+                    </ul>
+                    <span class = "right-container-arrow"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="CarouselContainer">
+            <div class = "OuterSectionText">
+                <h1>My Projects</h1>
+            </div>
+            <div class ="WrapperCarousel">
+                <i id = "left" class='fas fa-angle-left'></i>
+                <ul class = "carousel">
+                    <li class ="card">
+                        <div class ="imgCard">
+                            <img src="Images/curly_hair_guy_portrait_64_x_64.png" alt="Forgotten Shoe" draggable="false"><!--Draggable used to stop imgs from being grabbed-->
+                            <div class ="InnerText">
+                                <h2>Indie Game</h2>
+                                <p>Embark as a determined child journeys through diverse realms all to reclaim his grandmother's 'Forgotten Shoe.'</p>
+                                <a href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class ="card">
+                        <div class ="imgCard">
+                            <img src="Images/IJS_Logo_PNG_forIcontact.png" alt="In Jacobs Shoes" draggable="false">
+                            <div class ="InnerText">
+                                <h2>In Jacobs Shoes</h2>
+                                <p>A case study creating a landingpage website for a nonprofit organization.</p>
+                                <a href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class ="card">
+                        <div class ="imgCard">
+                            <img src="Images/8-set6t8xaVMYRiYM.png" alt="ReactWebsite" draggable="false">
+                            <div class ="InnerText">
+                                <h2>React Website</h2>
+                                <p>React Based Website using three.js to create a dynamic portfolio.</p>
+                                <a href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class ="card">
+                        <div class ="imgCard">
+                            <img src="Images/TunaSharkFishRender1.png" alt="TunaSharkCan" draggable="false">
+                            <div class ="InnerText">
+                                <h2>Blender Course</h2>
+                                <p>This was my first course creating a simple class on creating blender models.</p>
+                                <a href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <i id = "right" class='fas fa-angle-right'></i>
+            </div>
+        </div>
+    <footer>
+        <div class ="semiCircle">
+        <i class='fas fa-arrow-up'></i>
+        </div>
+        <div class="LinkContainer">
+            <h1>Lets Get in Touch!</h1>
+            <a href = "contactme.html" class="Contact">Contact Me</a>
+            <div class = "Contact2">
+                <a href = "wireframes.html">Wireframe</a>
+                <a href = "Portfolios.html">Portfolio</a>
+                <a href = "thoughts.html">Thoughts</a>
+            </div>
+            <ul class="Links">
+                <li class = "LinkItems">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                        <path fill="#316FF6" d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"></path>
+                        </svg>
+                    </a>
+                </li>
+                <li class = "LinkItems">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                            <path fill="#0078d4" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5	V37z"></path><path d="M30,37V26.901c0-1.689-0.819-2.698-2.192-2.698c-0.815,0-1.414,0.459-1.779,1.364	c-0.017,0.064-0.041,0.325-0.031,1.114L26,37h-7V18h7v1.061C27.022,18.356,28.275,18,29.738,18c4.547,0,7.261,3.093,7.261,8.274	L37,37H30z M11,37V18h3.457C12.454,18,11,16.528,11,14.499C11,12.472,12.478,11,14.514,11c2.012,0,3.445,1.431,3.486,3.479	C18,16.523,16.521,18,14.485,18H18v19H11z" opacity=".05"></path><path d="M30.5,36.5v-9.599c0-1.973-1.031-3.198-2.692-3.198c-1.295,0-1.935,0.912-2.243,1.677	c-0.082,0.199-0.071,0.989-0.067,1.326L25.5,36.5h-6v-18h6v1.638c0.795-0.823,2.075-1.638,4.238-1.638	c4.233,0,6.761,2.906,6.761,7.774L36.5,36.5H30.5z M11.5,36.5v-18h6v18H11.5z M14.457,17.5c-1.713,0-2.957-1.262-2.957-3.001	c0-1.738,1.268-2.999,3.014-2.999c1.724,0,2.951,1.229,2.986,2.989c0,1.749-1.268,3.011-3.015,3.011H14.457z" opacity=".07"></path><path fill="#fff" d="M12,19h5v17h-5V19z M14.485,17h-0.028C12.965,17,12,15.888,12,14.499C12,13.08,12.995,12,14.514,12	c1.521,0,2.458,1.08,2.486,2.499C17,15.887,16.035,17,14.485,17z M36,36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698	c-1.501,0-2.313,1.012-2.707,1.99C24.957,25.543,25,26.511,25,27v9h-5V19h5v2.616C25.721,20.5,26.85,19,29.738,19	c3.578,0,6.261,2.25,6.261,7.274L36,36L36,36z"></path>
+                        </svg>
+                    </a>
+                </li>
+                <li class = "LinkItems">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                            <linearGradient id="gv5I1eNj2U4GEiDuy-jkua_I49RSKuKXYoP_gr1" x1="29" x2="29" y1="-7.074" y2="68.738" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f44f5a"></stop><stop offset=".443" stop-color="#ee3d4a"></stop><stop offset="1" stop-color="#e52030"></stop></linearGradient><circle cx="29" cy="19.375" r="13.375" fill="url(#gv5I1eNj2U4GEiDuy-jkua_I49RSKuKXYoP_gr1)"></circle><linearGradient id="gv5I1eNj2U4GEiDuy-jkub_I49RSKuKXYoP_gr2" x1="8" x2="8" y1="67.463" y2="-.44" gradientUnits="userSpaceOnUse"><stop offset=".143" stop-color="#073042"></stop><stop offset="1" stop-color="#073042"></stop></linearGradient><rect width="6" height="34" x="5" y="7" fill="url(#gv5I1eNj2U4GEiDuy-jkub_I49RSKuKXYoP_gr2)"></rect>
+                        </svg>
+                    </a>
+                </li>
+                <li class = "LinkItems">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                            <path d="M17.791,46.836C18.502,46.53,19,45.823,19,45v-5.4c0-0.197,0.016-0.402,0.041-0.61C19.027,38.994,19.014,38.997,19,39 c0,0-3,0-3.6,0c-1.5,0-2.8-0.6-3.4-1.8c-0.7-1.3-1-3.5-2.8-4.7C8.9,32.3,9.1,32,9.7,32c0.6,0.1,1.9,0.9,2.7,2c0.9,1.1,1.8,2,3.4,2 c2.487,0,3.82-0.125,4.622-0.555C21.356,34.056,22.649,33,24,33v-0.025c-5.668-0.182-9.289-2.066-10.975-4.975 c-3.665,0.042-6.856,0.405-8.677,0.707c-0.058-0.327-0.108-0.656-0.151-0.987c1.797-0.296,4.843-0.647,8.345-0.714 c-0.112-0.276-0.209-0.559-0.291-0.849c-3.511-0.178-6.541-0.039-8.187,0.097c-0.02-0.332-0.047-0.663-0.051-0.999 c1.649-0.135,4.597-0.27,8.018-0.111c-0.079-0.5-0.13-1.011-0.13-1.543c0-1.7,0.6-3.5,1.7-5c-0.5-1.7-1.2-5.3,0.2-6.6 c2.7,0,4.6,1.3,5.5,2.1C21,13.4,22.9,13,25,13s4,0.4,5.6,1.1c0.9-0.8,2.8-2.1,5.5-2.1c1.5,1.4,0.7,5,0.2,6.6c1.1,1.5,1.7,3.2,1.6,5 c0,0.484-0.045,0.951-0.11,1.409c3.499-0.172,6.527-0.034,8.204,0.102c-0.002,0.337-0.033,0.666-0.051,0.999 c-1.671-0.138-4.775-0.28-8.359-0.089c-0.089,0.336-0.197,0.663-0.325,0.98c3.546,0.046,6.665,0.389,8.548,0.689 c-0.043,0.332-0.093,0.661-0.151,0.987c-1.912-0.306-5.171-0.664-8.879-0.682C35.112,30.873,31.557,32.75,26,32.969V33 c2.6,0,5,3.9,5,6.6V45c0,0.823,0.498,1.53,1.209,1.836C41.37,43.804,48,35.164,48,25C48,12.318,37.683,2,25,2S2,12.318,2,25 C2,35.164,8.63,43.804,17.791,46.836z"></path>
+                        </svg>
+                    </a>
+                </li>
+                <li class = "LinkItems">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                            <linearGradient id="PgB_UHa29h0TpFV_moJI9a_9a46bTk3awwI_gr1" x1="9.816" x2="41.246" y1="9.871" y2="41.301" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f44f5a"></stop><stop offset=".443" stop-color="#ee3d4a"></stop><stop offset="1" stop-color="#e52030"></stop></linearGradient><path fill="url(#PgB_UHa29h0TpFV_moJI9a_9a46bTk3awwI_gr1)" d="M45.012,34.56c-0.439,2.24-2.304,3.947-4.608,4.267C36.783,39.36,30.748,40,23.945,40	c-6.693,0-12.728-0.64-16.459-1.173c-2.304-0.32-4.17-2.027-4.608-4.267C2.439,32.107,2,28.48,2,24s0.439-8.107,0.878-10.56	c0.439-2.24,2.304-3.947,4.608-4.267C11.107,8.64,17.142,8,23.945,8s12.728,0.64,16.459,1.173c2.304,0.32,4.17,2.027,4.608,4.267	C45.451,15.893,46,19.52,46,24C45.89,28.48,45.451,32.107,45.012,34.56z"></path><path d="M32.352,22.44l-11.436-7.624c-0.577-0.385-1.314-0.421-1.925-0.093C18.38,15.05,18,15.683,18,16.376	v15.248c0,0.693,0.38,1.327,0.991,1.654c0.278,0.149,0.581,0.222,0.884,0.222c0.364,0,0.726-0.106,1.04-0.315l11.436-7.624	c0.523-0.349,0.835-0.932,0.835-1.56C33.187,23.372,32.874,22.789,32.352,22.44z" opacity=".05"></path><path d="M20.681,15.237l10.79,7.194c0.689,0.495,1.153,0.938,1.153,1.513c0,0.575-0.224,0.976-0.715,1.334	c-0.371,0.27-11.045,7.364-11.045,7.364c-0.901,0.604-2.364,0.476-2.364-1.499V16.744C18.5,14.739,20.084,14.839,20.681,15.237z" opacity=".07"></path><path fill="#fff" d="M19,31.568V16.433c0-0.743,0.828-1.187,1.447-0.774l11.352,7.568c0.553,0.368,0.553,1.18,0,1.549	l-11.352,7.568C19.828,32.755,19,32.312,19,31.568z"></path>
+                        </svg>
+                    </a>
+                </li>
+                <li class = "LinkItems">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                            <path fill="#8c9eff" d="M40,12c0,0-4.585-3.588-10-4l-0.488,0.976C34.408,10.174,36.654,11.891,39,14c-4.045-2.065-8.039-4-15-4s-10.955,1.935-15,4c2.346-2.109,5.018-4.015,9.488-5.024L18,8c-5.681,0.537-10,4-10,4s-5.121,7.425-6,22c5.162,5.953,13,6,13,6l1.639-2.185C13.857,36.848,10.715,35.121,8,32c3.238,2.45,8.125,5,16,5s12.762-2.55,16-5c-2.715,3.121-5.857,4.848-8.639,5.815L33,40c0,0,7.838-0.047,13-6C45.121,19.425,40,12,40,12z M17.5,30c-1.933,0-3.5-1.791-3.5-4c0-2.209,1.567-4,3.5-4s3.5,1.791,3.5,4C21,28.209,19.433,30,17.5,30z M30.5,30c-1.933,0-3.5-1.791-3.5-4c0-2.209,1.567-4,3.5-4s3.5,1.791,3.5,4C34,28.209,32.433,30,30.5,30z"></path>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <h6>Broward College &copy;2/1/2024 Melissa De Jesus</h6>
+        </div>
+    </footer>
+</body>
+</html>
