@@ -36,6 +36,14 @@ iframe{
 .MenuItem{
     padding: 1rem;
 }
+.MenuItem a:hover{
+    color:#50b39d;
+    text-decoration: none;
+}
+a.ExtraBold.MenuItem:hover{
+    color:#50b39d;
+    text-decoration: none;
+}
 
 .Logo{
     height: 50px;
@@ -248,9 +256,19 @@ form input, textarea{
     letter-spacing: 2px;
     text-shadow: 1px 2px 3px black;
     box-shadow: 1px 2px 3px black;
+    border-bottom: 4px black solid;
+    border-right: 4px black solid;
+    border-radius: 10px;
 }
 .CVbtns button:hover{
-    background-color:blueviolet;
+    background-color:rgb(43, 226, 171);
+    border-bottom: 2px black solid;
+    border-right: 2px black solid;
+}
+
+.CVbtns button a{
+    text-decoration: none;
+    color:#d1ffea;
 }
 /*Section for the animated wave*/
 .loop{
@@ -317,6 +335,7 @@ form input, textarea{
     flex-direction: column;
     margin-top: 50px;
     position: relative;
+    background-image: linear-gradient(rgb(255, 255, 255), #d0ff6198);
 }
 .GridContainer {
     width: 100%;
@@ -353,10 +372,16 @@ form input, textarea{
     
 }
 /* Work Experience Timeline */
+.WorkExperience{
+    background-image: linear-gradient(rgb(255, 255, 255), #c3ff9d);
+}
 .timelineContainer{
     position: relative;
+    display: flex;
+    justify-content: center;
+}
+.box{
     max-width: 1200px;
-    margin: 50px auto;
 }
 .timeline{
     padding: 10px 50px;

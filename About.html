@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="scripts/script.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +13,36 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script src="https://kit.fontawesome.com/3cf10c2d2f.js" crossorigin="anonymous"></script>
     <!--Website we will use to check our html syntax: validator.w3.org CSS syntax: jigsaw.w3.org/css-validator/ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .container{
+            margin-top: 50px;
+        }
+        .panel-title a{
+          text-decoration: none;
+          color:azure;
+          font-weight: bold;
+          text-shadow: 1px 2px 3px black;
+        }
+        .panel-default > .panel-heading{
+            background-color:#c5ffd5;
+        }
+        .CertGrid{
+            display:flex;
+            justify-content: center;
+        }
+        .CertGridItem{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+        }
+    </style>
 </head>
+
 <body>
     <!--This will be under the section Nav bar in CSS: /*Navbar*/ Comment-->
     <nav class = "NavContainer">
@@ -22,6 +51,9 @@
             <a href ="index.html" class="ExtraBold MenuItem">Melissa De Jesus</a>
         </div>
         <div class = "MenuContainer">
+            <div class = "MenuItem">
+                <a href="index.html" class = "ExtraBold">Home</a>
+            </div>
             <div class = "MenuItem">
                 <a href="contactme.html" class = "ExtraBold">Contact Me</a>
             </div>
@@ -51,21 +83,75 @@
                 <div class ="Wrapper ExtraBold">
                     <h1><strong>Hello</strong>, my name is <span class="SpecialColor">Melissa.</span></h1>
                     <h1>I am a <span class ="MultiText">Developer.</span></h1>
-                    <p class="AboutText">Hey there, I'm Melissa De Jesus a full-stack developer with a passion for building amazing, user-centeric applications. Lets work together to ensure you get what your looking for, success.</p>
+                    <p class="AboutText">Hey there, I'm Melissa De Jesus a front-end developer with a passion for building amazing, user-centeric applications. Lets work together to ensure you get what your looking for, success.</p>
                     <p class="AboutText">With a keen eye for detail and a love for clean code, I specialize in front-end development, where I bring designs to life with HTML, CSS, and JavaScript. My goal is to create engaging user experiences that seamlessly blend functionality with aesthetics. Constantly learning and staying updated with the latest technologies, I'm always eager to tackle new challenges and push the boundaries of what's possible on the web. Let's build something amazing together!</p>
                 </div>
             </div>
         </div>
     </header>
+    <main>
+        <div class="container">
+            <div class="panel-group" id="accordion">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">&#10225; What Certifications do I have?</a>
+                  </h4>
+                </div>
+                <div id="collapse1" class="panel-collapse collapse in">
+                  <div class="panel-body">
+                        <div class ="CertGrid">
+                            <div class ="CertGridItem">
+                                <p>Currently have Web Certifications:</p>
+                                <img src ="Images/WebAuthoring CC 2015.png" alt ="Adobe DreamWeaver CC 2015" width="400px" height="300px">
+                            </div>
+                            <div class ="CertGridItem">
+                                <p>Currently have Graphic Design Certifications:</p>
+                                <img src ="Images/Adobe Photoshop CC 2015.png" alt ="Adobe Photoshop CC 2015" width="400px" height="300px">
+                            </div>
+                        </div>
+                        <p>Currently Still Working towards IT Certifications:
+                            <br><br>Network + N10-008
+                            <br>Project + PK0-005
+                            <br>Web Specialist Certification Broward College
+                        </p>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">&#10225; Where can I see your resume?</a>
+                  </h4>
+                </div>
+                <div id="collapse2" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>You can download it and view it here.</p>
+                    <embed src="Images/Melissa De Jesus Resume.pdf" width="800px" height="1000px" />
+                 </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">&#10225; What are the programs that I use?</a>
+                  </h4>
+                </div>
+                <div id="collapse3" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>I use Art Programs: Medibang paint, Figma, Krita, Ibispaint, Gimp, Blender.</p>
+                    <p>I use Video Editors: Davinchi Resolve.</li>
+                    <p>I use IDE's: NetBeans, Eclipse, Visual Code Studio.</p>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </div>
+    </main>
     <footer style ="margin-top: 80px;">
         <div class="LinkContainer">
             <h1>Lets Get in Touch!</h1>
             <a href = "contactme.html" class="Contact">Contact Me</a>
-            <div class = "Contact2">
-                <a href = "wireframes.html">Wireframe</a>
-                <a href = "Portfolios.html">Portfolio</a>
-                <a href = "thoughts.html">Thoughts</a>
-            </div>
             <ul class="Links">
                 <li class = "LinkItems">
                     <a href="#">
@@ -75,7 +161,7 @@
                     </a>
                 </li>
                 <li class = "LinkItems">
-                    <a href="#">
+                    <a href="https://www.linkedin.com/in/melissa-de-jesus-969a422b7/">
                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
                             <path fill="#0078d4" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5	V37z"></path><path d="M30,37V26.901c0-1.689-0.819-2.698-2.192-2.698c-0.815,0-1.414,0.459-1.779,1.364	c-0.017,0.064-0.041,0.325-0.031,1.114L26,37h-7V18h7v1.061C27.022,18.356,28.275,18,29.738,18c4.547,0,7.261,3.093,7.261,8.274	L37,37H30z M11,37V18h3.457C12.454,18,11,16.528,11,14.499C11,12.472,12.478,11,14.514,11c2.012,0,3.445,1.431,3.486,3.479	C18,16.523,16.521,18,14.485,18H18v19H11z" opacity=".05"></path><path d="M30.5,36.5v-9.599c0-1.973-1.031-3.198-2.692-3.198c-1.295,0-1.935,0.912-2.243,1.677	c-0.082,0.199-0.071,0.989-0.067,1.326L25.5,36.5h-6v-18h6v1.638c0.795-0.823,2.075-1.638,4.238-1.638	c4.233,0,6.761,2.906,6.761,7.774L36.5,36.5H30.5z M11.5,36.5v-18h6v18H11.5z M14.457,17.5c-1.713,0-2.957-1.262-2.957-3.001	c0-1.738,1.268-2.999,3.014-2.999c1.724,0,2.951,1.229,2.986,2.989c0,1.749-1.268,3.011-3.015,3.011H14.457z" opacity=".07"></path><path fill="#fff" d="M12,19h5v17h-5V19z M14.485,17h-0.028C12.965,17,12,15.888,12,14.499C12,13.08,12.995,12,14.514,12	c1.521,0,2.458,1.08,2.486,2.499C17,15.887,16.035,17,14.485,17z M36,36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698	c-1.501,0-2.313,1.012-2.707,1.99C24.957,25.543,25,26.511,25,27v9h-5V19h5v2.616C25.721,20.5,26.85,19,29.738,19	c3.578,0,6.261,2.25,6.261,7.274L36,36L36,36z"></path>
                         </svg>
